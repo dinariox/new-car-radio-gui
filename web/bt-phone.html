@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Car Radio GUI</title>
+		<link rel="stylesheet" href="css/mdi.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/bt-phone.css" />
+		<!-- <script src="/eel.js"></script> -->
+	</head>
+	<body>
+		<div id="container">
+			<div id="top-bar">
+				<button id="home-button" class="icon-button glow-white"><span class="mdi mdi-home"></span></button>
+				<p id="clock" class="glow-white">13:04</p>
+				<button id="screen-off-button" class="icon-button glow-white"><span class="mdi mdi-eye-off"></span></button>
+			</div>
+			<div id="number-box">
+				<button id="btn-clear"><span class="mdi mdi-delete-forever"></span></button>
+				<p id="number"></p>
+				<button id="btn-delete"><span class="mdi mdi-map-marker-remove-variant mdi-rotate-90"></span></button>
+			</div>
+			<div id="dial-pad">
+				<button id="btn-dial-1">1</button>
+				<button id="btn-dial-2">2</button>
+				<button id="btn-dial-3">3</button>
+				<button id="btn-dial-4">4</button>
+				<button id="btn-dial-5">5</button>
+				<button id="btn-dial-6">6</button>
+				<button id="btn-dial-7">7</button>
+				<button id="btn-dial-8">8</button>
+				<button id="btn-dial-9">9</button>
+				<button id="btn-dial-+">+</button>
+				<button id="btn-dial-0">0</button>
+				<button id="btn-dial-call"><span class="mdi mdi-phone"></span></button>
+			</div>
+		</div>
+
+		<script src="js/bt-phone.js"></script>
+		<!-- <script>
+			eel.helloWorld();
+
+			eel.expose(helloWorldJS);
+			function helloWorldJS() {
+				alert("Hello World!");
+			}
+		</script> -->
+	</body>
+</html>

@@ -1,0 +1,66 @@
+#container {
+	background: rgb(106, 91, 66);
+	background: linear-gradient(32deg, rgba(106, 91, 66, 1) 0%, rgba(116, 102, 68, 1) 100%);
+}
+
+#number-box {
+	position: absolute;
+	top: 88px;
+	right: 32px;
+	background-color: rgba(255, 255, 255, 0.1);
+	width: 380px;
+	height: 56px;
+	border-radius: 99px;
+}
+
+#number {
+	margin: 0;
+	font-size: 30px;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#btn-clear,
+#btn-delete {
+	background: transparent;
+	border: none;
+	font-size: 32px;
+	color: rgba(255, 255, 255, 0.65);
+	padding: 10px;
+	position: absolute;
+	outline: none;
+	cursor: pointer;
+}
+
+#btn-clear {
+	left: 8px;
+}
+
+#btn-delete {
+	right: 8px;
+}
+
+#dial-pad {
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	width: 320px;
+	height: 290px;
+	top: 168px;
+	right: 60px;
+	position: absolute;
+}
+
+#dial-pad button {
+	font-size: 36px;
+	background: transparent;
+	border: none;
+	color: white;
+	outline: none;
+	cursor: pointer;
+}
+
+#dial-pad button:last-of-type {
+	color: #3ad83a;
+}

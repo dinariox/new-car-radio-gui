@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Car Radio GUI</title>
+		<link rel="stylesheet" href="css/mdi.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/home.css" />
+		<!-- <script src="/eel.js"></script> -->
+	</head>
+	<body>
+		<div id="container">
+			<div id="top-bar">
+				<button id="home-button" class="icon-button glow-white"><span class="mdi mdi-home"></span></button>
+				<p id="clock" class="glow-white">13:04</p>
+				<button id="screen-off-button" class="icon-button glow-white"><span class="mdi mdi-eye-off"></span></button>
+			</div>
+			<div id="home-grid">
+				<button id="btn-bt-music" class="home-grid-cell red">
+					<span class="mdi mdi-music-note-bluetooth glow-red"></span>
+					<div class="cell-line line-red"></div>
+				</button>
+				<button id="btn-bt-phone" class="home-grid-cell yellow">
+					<span class="mdi mdi-phone-bluetooth glow-yellow"></span>
+					<div class="cell-line line-yellow"></div>
+				</button>
+				<button id="btn-radio" class="home-grid-cell green">
+					<span class="mdi mdi-radio glow-green"></span>
+					<div class="cell-line line-green"></div>
+				</button>
+				<button id="btn-settings" class="home-grid-cell blue">
+					<span class="mdi mdi-car-cog glow-blue"></span>
+					<div class="cell-line line-blue"></div>
+				</button>
+			</div>
+		</div>
+
+		<script src="js/home.js"></script>
+		<!-- <script>
+			eel.helloWorld();
+
+			eel.expose(helloWorldJS);
+			function helloWorldJS() {
+				alert("Hello World!");
+			}
+		</script> -->
+	</body>
+</html>

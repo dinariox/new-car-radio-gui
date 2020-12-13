@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Car Radio GUI</title>
+		<link rel="stylesheet" href="css/mdi.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/radio.css" />
+		<!-- <script src="/eel.js"></script> -->
+	</head>
+	<body>
+		<div id="container">
+			<div id="top-bar">
+				<button id="home-button" class="icon-button glow-white"><span class="mdi mdi-home"></span></button>
+				<p id="clock" class="glow-white">13:04</p>
+				<button id="screen-off-button" class="icon-button glow-white"><span class="mdi mdi-eye-off"></span></button>
+			</div>
+
+			<p id="frequency">105.9</p>
+			<p id="stationname">FFH</p>
+			<p id="radiotext">Beispiel Radio Text</p>
+
+			<div id="controls">
+				<button id="btn-ta"><span class="mdi mdi-car-info"></span></button>
+				<div id="slider">
+					<input type="range" name="range" id="range" min="87.5" max="108" step="0.1" value="105.9" />
+					<div id="frequency-labels">
+						<p>88</p>
+						<p>90</p>
+						<p>92</p>
+						<p>94</p>
+						<p>96</p>
+						<p>98</p>
+						<p>100</p>
+						<p>102</p>
+						<p>104</p>
+						<p>106</p>
+						<p>108</p>
+					</div>
+				</div>
+				<button id="btn-list"><span class="mdi mdi-format-list-numbered"></span></button>
+			</div>
+
+			<div id="presets">
+				<button id="preset-1" class="set active">
+					<p>FFH</p>
+					<div class="preset-line"></div>
+				</button>
+				<button id="preset-2" class="set">
+					<p>1LIVE</p>
+					<div class="preset-line"></div>
+				</button>
+				<button id="preset-3">
+					<p>3</p>
+					<div class="preset-line"></div>
+				</button>
+				<button id="preset-4">
+					<p>4</p>
+					<div class="preset-line"></div>
+				</button>
+				<button id="preset-5">
+					<p>5</p>
+					<div class="preset-line"></div>
+				</button>
+				<button id="preset-6">
+					<p>6</p>
+					<div class="preset-line"></div>
+				</button>
+			</div>
+		</div>
+
+		<script src="js/radio.js"></script>
+		<!-- <script>
+			eel.helloWorld();
+
+			eel.expose(helloWorldJS);
+			function helloWorldJS() {
+				alert("Hello World!");
+			}
+		</script> -->
+	</body>
+</html>

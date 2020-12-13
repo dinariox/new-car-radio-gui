@@ -1,0 +1,141 @@
+#container {
+	background: rgb(62, 86, 60);
+	background: linear-gradient(32deg, rgba(62, 86, 60, 1) 0%, rgba(66, 107, 73, 1) 100%);
+}
+
+#frequency,
+#stationname,
+#radiotext,
+#controls {
+	margin: 0;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+#frequency {
+	top: 100px;
+	font-size: 160px;
+	color: rgba(255, 255, 255, 0.06);
+}
+
+#stationname {
+	top: 144px;
+	font-size: 52px;
+}
+
+#radiotext {
+	top: 208px;
+	font-size: 25px;
+}
+
+#controls {
+	top: 310px;
+	display: grid;
+	grid-template-columns: auto auto auto;
+	column-gap: 54px;
+}
+
+#controls button {
+	font-size: 42px;
+	padding: 8px;
+	border: none;
+	background: transparent;
+	color: white;
+	outline: none;
+	cursor: pointer;
+}
+
+#slider {
+	display: inline;
+	width: 476px;
+	position: relative;
+	top: 20px;
+}
+
+#range {
+	width: 452px;
+	-webkit-appearance: none;
+	background: transparent;
+}
+
+#range::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	height: 18px;
+	width: 6px;
+	background-color: #c94f4f;
+	border-radius: 99px;
+	position: relative;
+	top: -6px;
+}
+
+#range::-webkit-slider-runnable-track {
+	background: #d8d8d8;
+	border-radius: 99px;
+	height: 6px;
+}
+
+#frequency-labels {
+	display: grid;
+	grid-template-columns: repeat(11, 1fr);
+	margin-left: -6px;
+}
+
+#frequency-labels p {
+	margin: 0;
+	text-align: center;
+}
+
+#btn-ta span {
+	color: rgba(170, 170, 170, 0.5);
+}
+
+#btn-ta.enabled span {
+	color: #fff;
+}
+
+#presets {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+	position: absolute;
+	bottom: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	column-gap: 16px;
+}
+
+#presets button {
+	background: transparent;
+	border: none;
+	color: rgba(255, 255, 255, 0.65);
+	font-size: 20px;
+	padding: 2px;
+	outline: none;
+	cursor: pointer;
+}
+
+#presets button.set {
+	color: white;
+}
+
+#presets button.active {
+	text-shadow: 0 0 16px rgba(255, 255, 255, 0.45);
+}
+
+.preset-line {
+	width: 85px;
+	height: 3px;
+	border-radius: 99px;
+	background-color: rgba(255, 255, 255, 0.65);
+	position: relative;
+	bottom: 8px;
+	margin-top: -4px;
+}
+
+#presets button.set .preset-line {
+	background-color: white;
+}
+
+#presets button.active .preset-line {
+	box-shadow: 0 0 16px rgba(255, 255, 255, 0.45);
+}

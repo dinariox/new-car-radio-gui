@@ -1,0 +1,57 @@
+#container {
+	background: rgb(68, 48, 70);
+	background: linear-gradient(32deg, rgba(68, 48, 70, 1) 0%, rgba(83, 57, 99, 1) 100%);
+}
+
+#title,
+#author,
+#controls {
+	margin: 0;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+#title {
+	top: 144px;
+	font-size: 52px;
+}
+
+#author {
+	top: 208px;
+	font-size: 25px;
+}
+
+#controls {
+	top: 310px;
+}
+
+#controls button {
+	font-size: 42px;
+	padding: 8px;
+	border: none;
+	background: transparent;
+	color: white;
+	outline: none;
+	cursor: pointer;
+}
+
+#play {
+	background-color: rgba(255, 255, 255, 0.15);
+	border-radius: 99px;
+	width: 80px;
+	height: 80px;
+	padding: 0;
+	margin: 0 24px;
+}
+
+#play span {
+	position: relative;
+	top: 18px;
+	margin-left: 1px;
+}
+
+#controls button:nth-of-type(odd) {
+	position: relative;
+	top: 18px;
+}

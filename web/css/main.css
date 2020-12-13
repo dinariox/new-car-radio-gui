@@ -1,0 +1,59 @@
+@font-face {
+	font-family: "ProximaNova";
+	src: url(../fonts/ProximaNova.otf);
+}
+
+html,
+body {
+	margin: 0;
+	width: 800px;
+	height: 480px;
+	background-color: #111;
+	color: white;
+	font-family: "ProximaNova", "Segoe UI", sans-serif;
+}
+
+#container {
+	width: 800px;
+	height: 480px;
+	position: relative;
+}
+
+#top-bar {
+	width: 100%;
+	position: relative;
+}
+
+.glow-white {
+	text-shadow: 0 0 16px rgba(255, 255, 255, 0.45);
+}
+
+.icon-button {
+	font-size: 36px;
+	padding: 8px;
+	border: none;
+	background: transparent;
+	color: white;
+	outline: none;
+	cursor: pointer;
+	position: absolute;
+}
+
+#clock {
+	font-size: 36px;
+	position: absolute;
+	margin: 0;
+	top: 26px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+#home-button {
+	top: 20px;
+	left: 28px;
+}
+
+#screen-off-button {
+	top: 20px;
+	right: 28px;
+}

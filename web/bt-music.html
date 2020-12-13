@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="de">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Car Radio GUI</title>
+		<link rel="stylesheet" href="css/mdi.css" />
+		<link rel="stylesheet" href="css/main.css" />
+		<link rel="stylesheet" href="css/bt-music.css" />
+		<!-- <script src="/eel.js"></script> -->
+	</head>
+	<body>
+		<div id="container">
+			<div id="top-bar">
+				<button id="home-button" class="icon-button glow-white"><span class="mdi mdi-home"></span></button>
+				<p id="clock" class="glow-white">13:04</p>
+				<button id="screen-off-button" class="icon-button glow-white"><span class="mdi mdi-eye-off"></span></button>
+			</div>
+			<p id="title">Jenny</p>
+			<p id="author">Studio Killers</p>
+			<div id="controls">
+				<button><span class="mdi mdi-skip-backward"></span></button>
+				<button>
+					<div id="play"><span class="mdi mdi-play"></span></div>
+				</button>
+				<button><span class="mdi mdi-skip-forward"></span></button>
+			</div>
+		</div>
+
+		<script src="js/bt-music.js"></script>
+		<!-- <script>
+			eel.helloWorld();
+
+			eel.expose(helloWorldJS);
+			function helloWorldJS() {
+				alert("Hello World!");
+			}
+		</script> -->
+	</body>
+</html>
