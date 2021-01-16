@@ -27,7 +27,7 @@ def main():
 
     # Main Loop
     while True:
-        eel.sleep(1)
+        eel.sleep(2)
 
 
 
@@ -84,12 +84,14 @@ if __name__ == '__main__':
     if not transport_prop_iface:
         sys.exit('Error: DBus.Properties iface not found.')
 
-    bus.add_signal_receiver(
-            onPropertyChanged,
-            bus_name='org.bluez',
-            signal_name='PropertiesChanged',
-            dbus_interface='org.freedesktop.DBus.Properties')
-    GLib.MainLoop().run()
+    print("BT Init done")
+
+    # bus.add_signal_receiver(
+    #         onPropertyChanged,
+    #         bus_name='org.bluez',
+    #         signal_name='PropertiesChanged',
+    #         dbus_interface='org.freedesktop.DBus.Properties')
+    # GLib.MainLoop().run()
 
     # Main
     main()
