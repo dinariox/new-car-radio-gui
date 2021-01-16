@@ -7,7 +7,7 @@
 		<link rel="stylesheet" href="css/mdi.css" />
 		<link rel="stylesheet" href="css/main.css" />
 		<link rel="stylesheet" href="css/bt-music.css" />
-		<!-- <script src="/eel.js"></script> -->
+		<script src="/eel.js"></script>
 	</head>
 	<body>
 		<div id="container">
@@ -16,14 +16,14 @@
 				<p id="clock" class="glow-white">13:04</p>
 				<button id="screen-off-button" class="icon-button glow-white"><span class="mdi mdi-eye-off"></span></button>
 			</div>
-			<p id="title">Jenny</p>
-			<p id="author">Studio Killers</p>
+			<p id="title"></p>
+			<p id="author"></p>
 			<div id="controls">
-				<button><span class="mdi mdi-skip-backward"></span></button>
-				<button>
-					<div id="play"><span class="mdi mdi-play"></span></div>
+				<button id="btn-prev"><span class="mdi mdi-skip-backward"></span></button>
+				<button id="btn-playpause">
+					<div id="play"><span id="playpause-icon" class="mdi mdi-play"></span></div>
 				</button>
-				<button><span class="mdi mdi-skip-forward"></span></button>
+				<button id="btn-next"><span class="mdi mdi-skip-forward"></span></button>
 			</div>
 		</div>
 
